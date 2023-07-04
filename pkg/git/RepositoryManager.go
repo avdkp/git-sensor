@@ -283,6 +283,7 @@ func (impl RepositoryManagerImpl) ChangesSinceByRepository(repository *git.Repos
 				if err != nil {
 					impl.logger.Errorw("error in  fetching stats", "err", err)
 				}
+				impl.logger.Info("file stats did not panic", "commit", commit)
 				gitCommit.FileStats = &stats
 			}
 		}()
