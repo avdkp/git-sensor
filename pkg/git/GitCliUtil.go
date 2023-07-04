@@ -2,9 +2,9 @@ package git
 
 import (
 	"fmt"
+	"github.com/avdkp/go-git"
+	"github.com/avdkp/go-git/config"
 	"go.uber.org/zap"
-	"gopkg.in/src-d/go-git.v4"
-	"gopkg.in/src-d/go-git.v4/config"
 	"os"
 	"os/exec"
 	"strings"
